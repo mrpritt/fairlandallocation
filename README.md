@@ -14,7 +14,7 @@ In subdirectory `data` you can find the following supplementary data to the resu
 
 ## Instance generator
 
-The instance generator is in the subdirectory `instances/instance-generator`. You need to Boost libraries to compile. If they're installed, use
+The instance generator is in the subdirectory `instances/instance-generator`. You need the [Boost libraries](https://www.boost.org) to compile. If they're installed, use
 ```bash
 cd instances/instance-generator; make -j
 ```
@@ -22,7 +22,7 @@ to build it.
 
 ## Source code
 
-The code is contained in the subdirectory `src`. You need to Boost libraries to compile. To build:
+The code is contained in the subdirectory `src`. You need the [Boost libraries](https://www.boost.org) to compile. To build:
 ```bash
 cd src; make -j
 ```	
