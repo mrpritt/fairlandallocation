@@ -1,0 +1,250 @@
+*******************************************************************************
+* irace: An implementation in R of Iterated Race
+* Version: 2.1.1662
+* Copyright (C) 2010-2016
+* Manuel Lopez-Ibanez     <manuel.lopez-ibanez@manchester.ac.uk>
+* Jeremie Dubois-Lacoste  <jeremie.dubois-lacoste@ulb.ac.be>
+* Leslie Perez Caceres    <leslie.perez.caceres@ulb.ac.be>
+*
+* This is free software, and you are welcome to redistribute it under certain
+* conditions.  See the GNU General Public License for details. There is NO
+* WARRANTY; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*
+* irace builds upon previous code from the race package:
+*
+* race: Racing methods for the selection of the best
+* Copyright (C) 2003 Mauro Birattari
+*******************************************************************************
+	installed at: /home/alexgliesch/R/x86_64-pc-linux-gnu-library/3.2/irace
+Warning: A default scenario file './scenario.txt' has been found and will be read
+# 2017-01-25 05:03:50 BRST: Elitist race
+# Elitist new instances: 1
+# Elitist limit: 2
+
+# 2017-01-25 05:03:50 BRST: Initialization
+# nbIterations: 4
+# minNbSurvival: 4
+# nbParameters: 5
+# seed: 137307778
+# confidence level: 0.95
+# budget: 1000
+# mu: 5
+# deterministic: FALSE
+
+# 2017-01-25 05:03:50 BRST: Iteration 1 of 4
+# experimentsUsedSoFar: 0
+# remainingBudget: 1000
+# currentBudget: 250
+# nbConfigurations: 41
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+                                                                   
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          1|         41|         15|    1526820.000|         41|00:30:00|   NA|  NA|    NA|
+|x|          2|         41|         15|    1667755.000|         82|00:30:00|+0.67|0.84|0.1586|
+|x|          3|         41|         15|    1590730.000|        123|00:30:00|+0.65|0.77|0.3778|
+|x|          4|         41|         23|    2150071532.|        164|00:30:00|+0.46|0.60|0.5788|
+|-|          5|          8|         23|    1720755276.|        205|00:30:00|-0.00|0.20|0.9712|
+|=|          6|          8|         23|    1614301063.|        213|00:10:00|-0.06|0.12|0.9960|
+|=|          7|          8|         15|    4143742069.|        221|00:10:00|+0.02|0.16|0.9241|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:          15    mean value:     4143742069.
+Description of the best configuration:
+   .ID. pop_size alpha crossover_rate renew_rate keep_rate .PARENT.
+15   15       21  4.18           0.31       0.01      0.59       NA
+
+
+# 2017-01-25 07:53:52 BRST: Elite configurations:
+   pop_size alpha crossover_rate renew_rate keep_rate
+15       21  4.18           0.31       0.01      0.59
+23       22  2.89           0.84       0.00      0.48
+6        10  4.48           0.95       0.44      0.70
+18       18  4.23           0.89       0.39      0.88
+# 2017-01-25 07:53:52 BRST: Iteration 2 of 4
+# experimentsUsedSoFar: 221
+# remainingBudget: 779
+# currentBudget: 259
+# nbConfigurations: 35
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+                                                                   
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|          8|         35|         54|    3310670.000|         35|00:25:00|   NA|  NA|    NA|
+|x|          3|         35|         52|    2686906415.|         66|00:25:00|+0.03|0.52|1.0463|
+|x|          7|         35|         48|    1791885567.|         97|00:25:00|+0.24|0.49|0.7549|
+|x|          4|         35|          6|    2956805190.|        128|00:25:00|+0.30|0.47|0.7799|
+|-|          2|         21|         48|    3008951636.|        159|00:25:00|-0.01|0.19|1.0155|
+|=|          5|         21|         68|    3045031943.|        176|00:15:00|+0.02|0.18|0.9645|
+|=|          1|         21|         68|    2610250527.|        193|00:15:00|+0.07|0.20|0.9135|
+|-|          6|         14|         68|    2284220079.|        214|00:15:00|-0.05|0.08|0.9828|
+|=|          9|         14|         52|    837475585.6|        228|00:10:00|-0.03|0.09|0.9509|
+|=|         10|         14|         52|    753907202.0|        242|00:10:00|+0.01|0.11|0.9333|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:          52    mean value:     753907202.0
+Description of the best configuration:
+   .ID. pop_size alpha crossover_rate renew_rate keep_rate .PARENT.
+52   52       14  3.94           0.45       0.08      0.97       15
+
+
+# 2017-01-25 11:03:54 BRST: Elite configurations:
+   pop_size alpha crossover_rate renew_rate keep_rate
+52       14  3.94           0.45       0.08      0.97
+68       12  4.93           0.60       0.19      0.32
+71       20  4.60           0.48       0.04      0.34
+58       18  3.85           0.84       0.12      0.76
+# 2017-01-25 11:03:54 BRST: Iteration 3 of 4
+# experimentsUsedSoFar: 463
+# remainingBudget: 537
+# currentBudget: 268
+# nbConfigurations: 28
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+                                                                   
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         11|         28|         90|    2546820.000|         28|00:20:00|   NA|  NA|    NA|
+|x|          5|         28|         52|    1076105650.|         52|00:20:00|-0.31|0.34|1.0515|
+|x|          4|         28|         52|    1434550433.|         76|00:20:00|-0.03|0.31|1.0512|
+|x|          7|         28|         71|    808413655.0|        100|00:20:00|+0.11|0.33|1.0088|
+|-|          2|         20|         79|    2150037534.|        124|00:20:00|-0.01|0.20|0.9898|
+|=|          9|         20|         79|    1791943805.|        140|00:15:00|+0.03|0.19|0.9911|
+|=|          3|         20|         79|    1536162827.|        156|00:15:00|+0.01|0.15|0.9368|
+|=|          6|         20|         52|    539168338.8|        172|00:15:00|+0.02|0.14|0.8759|
+|=|          8|         20|         52|    1076191857.|        188|00:15:00|+0.03|0.14|0.8836|
+|=|         10|         20|         52|    968751846.0|        204|00:15:00|+0.02|0.12|0.8874|
+|=|          1|         20|         52|    880825638.2|        224|00:15:00|+0.04|0.13|0.8954|
+|=|         12|         20|         52|    897309335.0|        244|00:15:00|+0.04|0.12|0.8994|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:          52    mean value:     897309335.0
+Description of the best configuration:
+   .ID. pop_size alpha crossover_rate renew_rate keep_rate .PARENT.
+52   52       14  3.94           0.45       0.08      0.97       15
+
+
+# 2017-01-25 14:28:56 BRST: Elite configurations:
+   pop_size alpha crossover_rate renew_rate keep_rate
+52       14  3.94           0.45       0.08      0.97
+76       11  4.67           0.63       0.03      0.36
+78       15  3.95           0.55       0.20      0.89
+68       12  4.93           0.60       0.19      0.32
+# 2017-01-25 14:28:56 BRST: Iteration 4 of 4
+# experimentsUsedSoFar: 707
+# remainingBudget: 293
+# currentBudget: 293
+# nbConfigurations: 26
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+                                                                   
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         13|         26|        107|    1741560.000|         26|00:20:00|   NA|  NA|    NA|
+|x|          4|         26|        107|    2686750780.|         48|00:20:00|+0.04|0.52|0.9028|
+|x|         10|         26|        107|    1791757773.|         70|00:20:00|+0.23|0.49|0.7461|
+|x|          6|         26|        107|    1344344200.|         92|00:20:00|+0.18|0.39|0.7647|
+|-|         11|         12|        107|    1078534760.|        114|00:20:00|-0.08|0.13|0.9167|
+|=|          9|         12|        107|    899037680.0|        122|00:10:00|-0.02|0.15|0.9213|
+|=|          3|         12|        107|    770826524.3|        130|00:10:00|-0.08|0.08|0.9897|
+|=|          5|         12|        107|    674889393.8|        138|00:10:00|-0.05|0.08|0.9518|
+|=|          8|         12|        107|    1197038350.|        146|00:10:00|-0.06|0.06|0.9730|
+|=|          2|         12|        117|    1935866939.|        154|00:10:00|-0.07|0.04|0.9807|
+|=|         12|         12|        107|    979968918.2|        162|00:10:00|-0.06|0.03|0.9670|
+|=|          7|         12|        117|    1703563049.|        170|00:10:00|-0.06|0.03|0.9559|
+|=|          1|         12|        117|    1572639352.|        182|00:10:00|-0.06|0.02|0.9560|
+|=|         14|         12|        117|    1997416541.|        194|00:10:00|-0.05|0.02|0.9499|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         117    mean value:     1997416541.
+Description of the best configuration:
+    .ID. pop_size alpha crossover_rate renew_rate keep_rate .PARENT.
+117  117       15  3.77           0.59       0.12      0.86       78
+
+
+# 2017-01-25 17:38:57 BRST: Elite configurations:
+    pop_size alpha crossover_rate renew_rate keep_rate
+117       15  3.77           0.59       0.12      0.86
+107       13  4.09           0.51       0.09      0.96
+78        15  3.95           0.55       0.20      0.89
+76        11  4.67           0.63       0.03      0.36
+# 2017-01-25 17:38:57 BRST: Iteration 5 of 5
+# experimentsUsedSoFar: 901
+# remainingBudget: 99
+# currentBudget: 99
+# nbConfigurations: 10
+  Markers:
+     x No test is performed.
+     - The test is performed and some configurations are discarded.
+     = The test is performed but no configuration is discarded.
+     ! The test is performed and configurations could be discarded but elite configurations are preserved.
+                                                                   
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+| |   Instance|      Alive|       Best|      Mean best| Exp so far|  W time|  rho|KenW|  Qvar|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+|x|         15|         10|        124|    1686550.000|         10|00:10:00|   NA|  NA|    NA|
+|x|         11|         10|        124|    3873485.000|         16|00:05:00|-0.19|0.41|1.4342|
+|x|          4|         10|        120|    1435284127.|         22|00:05:00|-0.38|0.08|1.2200|
+|x|          3|         10|        124|    3225677835.|         28|00:05:00|-0.17|0.12|1.0124|
+|=|         13|         10|        117|    2365705034.|         34|00:05:00|-0.13|0.10|0.9708|
+|=|         10|         10|        117|    1971709580.|         40|00:05:00|-0.03|0.14|0.9083|
+|=|          7|         10|        117|    1690377811.|         46|00:05:00|+0.04|0.18|0.8671|
+|=|         14|         10|        117|    2419020585.|         52|00:05:00|-0.02|0.11|0.9095|
+|=|          5|         10|        117|    2150515453.|         58|00:05:00|-0.01|0.10|0.8744|
+|=|          9|         10|        117|    1935679630.|         64|00:05:00|-0.06|0.05|0.9248|
+|=|          6|         10|        124|    2150410224.|         70|00:05:00|-0.08|0.02|0.9456|
+|=|         12|         10|        107|    1166874908.|         76|00:05:00|-0.07|0.02|0.9352|
+|=|          1|         10|         76|    1158876625.|         82|00:05:00|-0.06|0.02|0.9534|
+|=|          8|         10|         76|    1076307452.|         88|00:05:00|-0.05|0.02|0.9409|
+|=|          2|         10|        124|    1720788998.|         98|00:10:00|-0.05|0.02|0.9365|
++-+-----------+-----------+-----------+---------------+-----------+--------+-----+----+------+
+Best configuration:         124    mean value:     1720788998.
+Description of the best configuration:
+    .ID. pop_size alpha crossover_rate renew_rate keep_rate .PARENT.
+124  124       15  3.72           0.59       0.05      0.85      117
+
+
+# 2017-01-25 19:03:58 BRST: Elite configurations:
+    pop_size alpha crossover_rate renew_rate keep_rate
+124       15  3.72           0.59       0.05      0.85
+76        11  4.67           0.63       0.03      0.36
+119       11  4.77           0.69       0.06      0.37
+117       15  3.77           0.59       0.12      0.86
+# 2017-01-25 19:03:58 BRST: Stopped because there is not enough budget left to race more than the minimum (4)
+# You may either increase the budget or set 'minNbSurvival' to a lower value
+# Iteration: 6
+# nbIterations: 6
+# experimentsUsedSoFar: 999
+# timeUsed: 0
+# remainingBudget: 1
+# currentBudget: 1
+# number of elites: 4
+# nbConfigurations: 3
+# Best configurations (first number is the configuration ID)
+    pop_size alpha crossover_rate renew_rate keep_rate
+124       15  3.72           0.59       0.05      0.85
+76        11  4.67           0.63       0.03      0.36
+119       11  4.77           0.69       0.06      0.37
+117       15  3.77           0.59       0.12      0.86
+# Best configurations as commandlines (first number is the configuration ID)
+124  --pop-size 15 --mutation-alpha 3.72 --crossover-rate 0.59 --renew-rate 0.05 --keep-rate 0.85
+76   --pop-size 11 --mutation-alpha 4.67 --crossover-rate 0.63 --renew-rate 0.03 --keep-rate 0.36
+119  --pop-size 11 --mutation-alpha 4.77 --crossover-rate 0.69 --renew-rate 0.06 --keep-rate 0.37
+117  --pop-size 15 --mutation-alpha 3.77 --crossover-rate 0.59 --renew-rate 0.12 --keep-rate 0.86
+Warning message:
+In readLines(con = file) :
+  incomplete final line found on '/home/alexgliesch/proterra/src/irace/parameters.txt'

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+EXE=../proterra
+FIXED_PARAMS=" --time 300 --batch-size 256 --irace "
+CONFIG_ID="$1"
+INSTANCE_ID="$2"
+SEED="$3"
+INSTANCE="$4"
+
+# All other parameters are the candidate parameters to be passed to program
+shift 4 || error "Not enough parameters to $0"
+CONFIG_PARAMS=$*
+
+# echo $EXE ${FIXED_PARAMS} --in "$INSTANCE" --seed $SEED ${CONFIG_PARAMS} 
+$EXE ${FIXED_PARAMS} --in "$INSTANCE" --seed $SEED ${CONFIG_PARAMS} 

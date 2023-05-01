@@ -1,0 +1,6 @@
+Compiling:
+'make': compile with -O2, verbosity and soft assertions. Should be used during development.
+'make debug': same as make, but with the HARD_DEBUG defined, which enables time-consuming assertions.
+'make release': non-verbose, -O3, no assertions. Should be used for the release build.
+
+Program options: see ./proterra --help
